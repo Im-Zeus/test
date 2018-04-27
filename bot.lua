@@ -7,14 +7,14 @@ JSON = require('dkjson')
 redis = (loadfile "./redis.lua")()
 HTTPS = require('ssl.https')
 ----config----
-local bot_api_key = "BOT-TOKEN" --token
+local bot_api_key = "519387966:AAE1rKumStmwL0FfwClBxL_k3QU-A3dtxEQ" --token
 local BASE_URL = "https://api.telegram.org/bot"..bot_api_key
 -------
 
 ----utilites----
 function is_admin(msg)-- Check if user is admin or not
   local var = false
-  local admins = {122774063} --admins id
+  local admins = {524059596} --admins id
   for k,v in pairs(admins) do
     if msg.from.id == v then
       var = true
